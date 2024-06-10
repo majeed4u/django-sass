@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Sass web site">
+        <meta name="keywords" content="Sass web site">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>
+            {% block title %}
+                SASS  {{ block.super }}
+            {% endblock title %}
+        </title>
+    </head>
+    <body>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
